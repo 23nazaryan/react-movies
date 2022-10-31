@@ -19,7 +19,7 @@ class Main extends React.Component {
         this.setState({loading: true})
         search = search === '' ? 'pirates' : search
 
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}${type !== 'all' ? '&type=' + type : ''}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}${type !== 'all' ? '&type=' + type : ''}`)
             .then(res => res.json())
             .then(data => {
                 if (data.Response === 'True') {
@@ -28,7 +28,10 @@ class Main extends React.Component {
                     this.setState({movies: [], loading: false})
                 }
             })
-            .catch(e => alert(e))
+            .catch(e => {
+                console.error(e)
+                this.setState({loading: false})
+            })
     }
 
     render() {
