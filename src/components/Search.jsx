@@ -38,13 +38,13 @@ class Search extends React.Component {
         return (<div className="row">
             <div className="input-field col s12">
                 <div className="row">
-                    <div className="col s1">
+                    <div className="col s2 m1">
                         <a className="btn-floating btn-large waves-effect waves-light red"
                            onClick={this.handleSearch}
                         ><i className="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </div>
-                    <div className="col s11">
+                    <div className="col s10 m11">
                         <input
                             id="email"
                             type="search"
