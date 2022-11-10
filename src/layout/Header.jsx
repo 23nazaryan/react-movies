@@ -4,7 +4,8 @@ function Header() {
                     <div className="nav-wrapper">
                         <a href="#" className="brand-logo">React Movies</a>
                         <ul className="right hide-on-med-and-down">
-                            <li><a href="#">Repo</a></li>
+                            <li><a target="_blank" href="https://23nazaryan.github.io/react-movies/" rel="noreferrer">Repo</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
