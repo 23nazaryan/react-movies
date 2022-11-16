@@ -1,6 +1,5 @@
 function Movie(props) {
     const {
-        imdbID: id,
         Title: title,
         Poster: poster,
         Year: year,
@@ -14,9 +13,6 @@ function Movie(props) {
         </div>
         <div className="card-content">
             <p>{type} <span className="right">{year}</span></p>
-        </div>
-        <div className="card-action">
-            <a href="#">This is a link</a>
         </div>
     </div>)
 }

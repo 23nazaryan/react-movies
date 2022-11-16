@@ -33,10 +33,10 @@ const Search = props => {
         <div className="input-field col s12">
             <div className="row">
                 <div className="col s2 m1">
-                    <a className="btn-floating btn-large waves-effect waves-light red"
+                    <button className="btn-floating btn-large waves-effect waves-light red"
                        onClick={handleSearch}
                     ><i className="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                    </button>
                 </div>
                 <div className="col s10 m11">
                     <input
